@@ -58,8 +58,7 @@ public class BinaryTreeVerticalOrder {
                 sum+= i;
             }
             System.out.println("Total:"+sum);
-        });
-        
+        });    
     }
 
     private static void printVerticalOrder(Node node, int distance) {
@@ -76,9 +75,6 @@ public class BinaryTreeVerticalOrder {
         list.add(node.data);
         map.put(distance, list);
         printVerticalOrder(node.left, distance - 1);
-        printVerticalOrder(node.right, distance + 1);
-        
-        
+        printVerticalOrder(node.right, distance + 1);   
     }
-    
 }
