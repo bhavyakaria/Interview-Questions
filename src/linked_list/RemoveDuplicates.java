@@ -50,11 +50,13 @@ public class RemoveDuplicates {
         rd.append(50);
         rd.append(40);
         
-        usingHashTable();
+        usingHashMap();
+        
+        withoutBuffer();
         
     }
 
-    private static void usingHashTable() {
+    private static void usingHashMap() {
         Map<Integer,Integer> map = new HashMap<>();
         Node current = head;
         while(current.next != null) {
@@ -68,6 +70,10 @@ public class RemoveDuplicates {
         if(map.containsKey(current.data)) {
             System.out.println("Duplicate: "+current.data);
         }
+    }
+
+    private static void withoutBuffer() {
+        
     }
     
 }
