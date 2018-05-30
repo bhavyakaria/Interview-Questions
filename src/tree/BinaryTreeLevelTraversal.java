@@ -59,6 +59,16 @@ public class BinaryTreeLevelTraversal {
         map.put(level, list);
         levelTraversal(node.left, level + 1);
         levelTraversal(node.right, level + 1);   
-    }
-    
+    }   
 }
+
+// Output:
+/* Nodes at Level 0 : [1]
+ * Total:1
+ * Nodes at Level 1 : [2, 3]
+ * Total:5
+ * Nodes at Level 2 : [4, 5, 8]
+ * Total:17
+ * Nodes at Level 3 : [10]
+ * Total:10
+ */
