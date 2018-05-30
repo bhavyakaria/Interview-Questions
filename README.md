@@ -10,6 +10,7 @@ A repo containing list of commonly asked programming questions in interview.
 
 ## Tree
 1. [Check if the binary tree is balanced or not.](https://github.com/bhavyakaria/Interview-Questions/blob/master/src/tree/BinaryTreeBalance.java)
+2. [Print a Binary Tree in Vertical Order](https://github.com/bhavyakaria/Interview-Questions/blob/master/src/tree/BinaryTreeVerticalOrder.java)
 
 ## Sorting Algorithms
 1. [Merge Sort](https://github.com/bhavyakaria/Interview-Questions/blob/master/src/sorting_algos/MergeSort.java)
