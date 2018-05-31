@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Program to create a binary tree from sorted array.
+ * 
+ * Approach:
+ * 1. Find the middle element of the array and make it the root node.
+ * 2. Repeat this for the left sub-array and right sub-array.
  */
 package tree;
 
@@ -15,13 +17,12 @@ public class CreateBinaryTree {
         int arr[] = {1,2,3,4,5,6,7,8,9};
         int length = arr.length;
         Node tree = createBinaryTree(arr,0,length-1);
-        traverseInOrder(tree);
+        traversePostOrder(tree);
     }
-    public static void traverseInOrder(Node node) {
+    public static void traversePostOrder(Node node) {
         if (node != null) {
-            traverseInOrder(node.left);
-            
-            traverseInOrder(node.right);
+            traversePostOrder(node.left);
+            traversePostOrder(node.right);
             System.out.print(" " + node.data);
         }
     }
