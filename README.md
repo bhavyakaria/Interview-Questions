@@ -10,8 +10,8 @@ A repo containing list of commonly asked programming questions in interview.
 5. [Add two numbers represented by Linked List](https://github.com/bhavyakaria/Interview-Questions/blob/master/linked_list/AddTwoNumbers.java)
 
 ## Tree
-1. [Check if the binary tree is balanced or not.]()
-2. [Print a Binary Tree in Vertical Order](https://github.com/bhavyakaria/Interview-Questions/blob/master/src/tree/BinaryTreeVerticalOrder.java)
+1. [Check if the binary tree is balanced or not.](https://github.com/bhavyakaria/Interview-Questions/blob/master/tree/BinaryTreeBalance.java)
+2. [Print a Binary Tree in Vertical Order](https://github.com/bhavyakaria/Interview-Questions/blob/master/tree/BinaryTreeVerticalOrder.java)
 
 ## Sorting Algorithms
 1. [Merge Sort](https://github.com/bhavyakaria/Interview-Questions/blob/master/sorting_algos/MergeSort.java)
