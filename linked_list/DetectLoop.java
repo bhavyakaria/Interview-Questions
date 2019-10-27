@@ -16,6 +16,13 @@
  *    (As the distance covered by ptr1 will be half)
  * 2. Iterate till counter > 0
  * 3. Make the node.next = null
+ * 
+ * Alternate Methods for finding loops:
+ * 1. Brent's algorithm
+ *
+ * Applications:
+ * 1. Testing quality of pseudorandom number generators and cryptographic hash functions
+ * 2. Detecting of infinite loops in computer programs
  */
 
 package linked_list;
@@ -57,7 +64,7 @@ public class DetectLoop {
         } else {
             System.out.println("Loop Not Present");
         }
-        RemoveLoop();
+        removeLoop();
         if (isloop(dl.head)) {
             System.out.println("Loop Present");
             start = startingLoopPoint(dl.head);
@@ -102,7 +109,7 @@ public class DetectLoop {
         return ptr1;
     }
     
-    private static void RemoveLoop() {
+    private static void removeLoop() {
         
         int total = count*2;
         while(total > 0) {
