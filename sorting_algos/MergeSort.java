@@ -1,3 +1,4 @@
+import java.util.Arrays;
 /*
  * Merge Sort
  * In this we divide the array in two halves and 
@@ -9,9 +10,7 @@
  * Applicaction:
  * 1. Used to sort Linked List because nodes in linked list are stored randomly at different memory locations.
  *    And Random access is low in Merge Sort.
- *
  */
-package sorting_algos;
 
 /**
  *
@@ -21,23 +20,22 @@ public class MergeSort {
     
     public static void main(String[] args) {
         
-        MergeSort ms = new MergeSort();
-        int array[] = {10,50,30,40,80,70,90,20,60};
+        int[] array = {10, 50, 30, 40, 80, 70, 90, 20, 60};
         
         System.out.println("Array before sorting:");
-        display(array);
+        System.out.println(Arrays.toString(array));
         
-        mergeSort(array,0,array.length-1);
+        mergeSort(array, 0, array.length-1);
         
         System.out.println("Array after sorting:");
-        display(array);
+        System.out.println(Arrays.toString(array));
     }
 
     private static void mergeSort(int[] array,int start,int end) {
         
         if(start < end) {
             // Find the middle
-            int middle = (start+end)/2;
+            int middle = (start + end)/2;
             
             // Sort first and second halve
             mergeSort(array, start, middle);
@@ -45,15 +43,7 @@ public class MergeSort {
             
             // Merge the sorted halves
             merge(array, start, middle, end);
-        }
-        
-    }
-    
-    public static void display(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]+" ");
-        }
-        System.out.println("");
+        }   
     }
 
     private static void merge(int[] array, int start, int middle, int end) {
@@ -62,8 +52,8 @@ public class MergeSort {
         int n2 = end - middle;
         
         // Create temp array
-        int L[] = new int[n1];
-        int R[] = new int[n2];
+        int[] L = new int[n1];
+        int[] R = new int[n2];
         
         // Copy data to temp array
         for (int i = 0; i < n1; ++i) {
@@ -75,8 +65,8 @@ public class MergeSort {
         
         /* Merge the temp array */
         // Initialize index 
-        int i=0, j=0;
-        int k=start;
+        int i = 0, j = 0;
+        int k = start;
         while(i < n1 && j < n2) {
             if(L[i] <= R[j]) {
                 array[k] = L[i++];
@@ -95,7 +85,5 @@ public class MergeSort {
         while(j < n2) {
             array[k++] = R[j++];
         }
-        
     }
-    
 }
