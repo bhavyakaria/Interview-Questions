@@ -8,7 +8,7 @@
  * 5. New head will be head = k.next
  * 6. And k.next = null (Last Node)
  */
-package linked_list;
+// package linked_list;
 
 import java.util.Scanner;
 
