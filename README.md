@@ -15,3 +15,7 @@ A repo containing list of commonly asked programming questions in interview.
 
 ## Sorting Algorithms
 1. [Merge Sort](https://github.com/bhavyakaria/Interview-Questions/blob/master/sorting_algos/MergeSort.java)
+
+## Stacks and Queues
+1. [Validate Parentheses](https://github.com/bhavyakaria/Interview-Questions/blob/master/stacks_and_queues/ValidParentheses.java)
+)
