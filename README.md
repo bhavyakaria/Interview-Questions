@@ -18,4 +18,4 @@ A repo containing list of commonly asked programming questions in interview.
 
 ## Stacks and Queues
 1. [Validate Parentheses](https://github.com/bhavyakaria/Interview-Questions/blob/master/stacks_and_queues/ValidParentheses.java)
-)
+
