@@ -5,10 +5,16 @@ Priority Queue
 1. To be used when objects are to be processed in some priority order.
 2. Basic operations:
     * add()
-    * peek() -> retrives but doesn't remove the head of the queue
-    * poll() -> retrives and removes the head of the queue
+    * peek() -> retrieves but doesn't remove the head of the queue
+    * poll() -> retrieves and removes the head of the queue
 3. The head of the queue is the last element with respect to the ordering of the queue.
 4. Default initial capacity of the queue is 11.
+5. PriorityQueue doesn't permit null.
+
+Time Complexity:
+Insert: O(log(n))
+Delete: O(log(n))
+Retrieve: O(1)
 
  */
 
