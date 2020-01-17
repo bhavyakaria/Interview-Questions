@@ -19,3 +19,5 @@ A repo containing list of commonly asked programming questions in interview.
 ## Stacks and Queues
 1. [Validate Parentheses](https://github.com/bhavyakaria/Interview-Questions/blob/master/stacks_and_queues/ValidParentheses.java)
 
+## Miscellaneous
+1. [Detect if number is Odd or Even](https://github.com/bhavyakaria/Interview-Questions/blob/master/miscellaneous/OddEven.java)
